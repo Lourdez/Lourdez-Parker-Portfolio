@@ -20,7 +20,7 @@ const Profile = () => {
                 <div className="text-content">
                     <h2>Hello,</h2>
                     <h1>I’m <span className="highlight">Lourdez Parker</span></h1>
-                    <h2>FullStack Developer and devops engineer</h2>
+                    <h2>FullStack Developer</h2>
                     <p>
                         Full Stack Developer skilled in Spring Boot, React,AWS and DevOps dedicated to building seamless, scalable applications across the tech stack.
                     </p>
