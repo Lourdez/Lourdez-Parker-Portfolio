@@ -62,3 +62,105 @@
 
 
 }
+ 
+
+
+
+
+.navbar {
+  position: fixed;
+  top: 0;
+  height: 5rem;
+  width: 100%;
+  background-color: black;
+  max-width: 100rem;
+  text-decoration: none;
+  display: flex;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  align-items: center;
+  justify-content: space-around;
+  font-size: larger;
+  z-index: 3;
+}
+
+.logo {
+  max-width: 100%;
+  object-fit: cover;
+  height: 90px;
+}
+
+.desktopmenuitems {
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.desktopmenuitems:hover {
+  color: yellow;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid yellow;
+}
+
+.desktopmenubutton {
+  max-width: 150px;
+  background: white;
+  color: black;
+  display: flex;
+  border: none;
+  align-items: center;
+  padding: 0 1rem;
+  border-radius: 2rem;
+  font-size: 12px;
+}
+
+.desktopmenubutton:hover {
+  background: #ffd700;
+  transform: scale(105%);
+}
+
+.desktopmenuimg {
+  width: 100%;
+  object-fit: cover;
+  height: 1rem;
+  width: 1rem;
+  margin: 1rem;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .desktopmenuitems-container {
+    display: none;
+    flex-direction: column;
+    background-color: black;
+    position: absolute;
+    top: 5rem;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+  }
+
+  .desktopmenuitems-container.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .desktopmenuitems {
+    margin: 1rem 0;
+    font-size: larger;
+  }
+
+  .desktopmenubutton {
+    margin: 1rem 0;
+    width: 80%;
+  }
+}
